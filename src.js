@@ -2,7 +2,7 @@
 // .then(res => res.json())
 // .then(data => console.log(data))
 
- const data = fetch('./assets/data.json')
+ const data = fetch('./data.json')
   .then(function (response) {
     return response.json();
   })

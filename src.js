@@ -1,8 +1,4 @@
-// const data = fetch("./assets/data.json")
-// .then(res => res.json())
-// .then(data => console.log(data))
-
- const data = fetch('./data.json')
+const data = fetch('./data.json')
   .then(function (response) {
     return response.json();
   })
@@ -15,7 +11,7 @@
     console.log(err);
   });
 
-  function appendData(data) {
+function appendData(data) {
   const container = document.getElementById('contents');
   const container1 = document.getElementById('calculationcontent');
   data.forEach((result, idx) => {
@@ -42,7 +38,7 @@
         </div>
       </div>
     `;
-   
+
     container.innerHTML += content;
 
   });
@@ -98,7 +94,7 @@
 </div>
 
   `
-       container1.innerHTML += content1;
+  container1.innerHTML += content1;
 
 
 }
